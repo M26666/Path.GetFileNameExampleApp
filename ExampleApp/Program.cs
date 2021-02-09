@@ -21,33 +21,33 @@ namespace ExampleApp
             Console.WriteLine("Below are examples of UNC Path processing using Path.GetFileName");
             Console.WriteLine("---------------------------------------------------------------");
             
-            Console.WriteLine($"1.0 Testing File: \"{UNC_SHARED_FILE}\"\r\n{Path.GetFileName(UNC_SHARED_FILE)}");
-            Console.WriteLine();
-            
-            Console.WriteLine($"2.0 Testing Sub Folder: \"{UNC_SHARED_SUB_FOLDER}\"\r\n{Path.GetFileName(UNC_SHARED_SUB_FOLDER)}");
-            Console.WriteLine();
-            
-            Console.WriteLine($"3.0 Testing Root Folder: \"{UNC_SHARED_ROOT_FOLDER}\"\r\n{Path.GetFileName(UNC_SHARED_ROOT_FOLDER)}");
-            Console.WriteLine();
+            Console.WriteLine($"1.0 Testing Sub File: \"{UNC_SHARED_FILE}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(UNC_SHARED_FILE)}\r\n");
 
-            Console.WriteLine($"4.0 Testing Root File: \"{UNC_SHARED_ROOT_FILE}\"\r\n{Path.GetFileName(UNC_SHARED_ROOT_FILE)}");
-            Console.WriteLine();
-            
+            Console.WriteLine($"2.0 Testing Sub Folder: \"{UNC_SHARED_SUB_FOLDER}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(UNC_SHARED_SUB_FOLDER)}\r\n");
+
+            Console.WriteLine($"3.0 Testing Root Folder: \"{UNC_SHARED_ROOT_FOLDER}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(UNC_SHARED_ROOT_FOLDER)}\r\n");
+
+            Console.WriteLine($"4.0 Testing Root File: \"{UNC_SHARED_ROOT_FILE}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(UNC_SHARED_ROOT_FILE)}\r\n");
+
             //System Paths
             Console.WriteLine("Below are examples of Normal System Path processing using Path.GetFileName");
             Console.WriteLine("---------------------------------------------------------------");
             
-            Console.WriteLine($"1.1 Testing File: \"{SHARED_FILE}\"\r\n{Path.GetFileName(SHARED_FILE)}");
-            Console.WriteLine();
-            
-            Console.WriteLine($"2.1 Testing Sub Folder: \"{SHARED_SUB_FOLDER}\"\r\n{Path.GetFileName(SHARED_SUB_FOLDER)}");
-            Console.WriteLine();
-            
-            Console.WriteLine($"3.1 Testing Root Folder: \"{SHARED_ROOT_FOLDER}\"\r\n{Path.GetFileName(SHARED_ROOT_FOLDER)}");
-            Console.WriteLine();
-            
-            Console.WriteLine($"4.1 Testing Root File: \"{SHARED_ROOT_FILE}\"\r\n{Path.GetFileName(SHARED_ROOT_FILE)}");
-            Console.WriteLine();
+            Console.WriteLine($"1.1 Testing Sub File: \"{SHARED_FILE}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(SHARED_FILE)}\r\n");
+
+            Console.WriteLine($"2.1 Testing Sub Folder: \"{SHARED_SUB_FOLDER}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(SHARED_SUB_FOLDER)}\r\n");
+
+            Console.WriteLine($"3.1 Testing Root Folder: \"{SHARED_ROOT_FOLDER}\"");
+            Console.WriteLine($"Output: {Path.GetFileName(SHARED_ROOT_FOLDER)}\r\n");
+
+            Console.WriteLine($"4.1 Testing Root File: \"{SHARED_ROOT_FILE}");
+            Console.WriteLine($"Output: {Path.GetFileName(SHARED_ROOT_FILE)}\r\n");
         }
     }
 }
